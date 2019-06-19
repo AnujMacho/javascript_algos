@@ -1,7 +1,7 @@
 function squaredItems(arr1, arr2){
     if (arr1.length !== arr2.length) return false;
-    arr1.forEach(element => {
-        let index = arr2.indexOf(arr1[element]**2);
+    for(let i=0; i<arr1.length; i++){
+        let index = arr2.indexOf(arr1[i]**2);
         if(index === -1){
             return false;
         }
